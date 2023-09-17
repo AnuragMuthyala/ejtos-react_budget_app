@@ -10,10 +10,11 @@ const Budget = () => {
             payload: event.target.value
         });
     }
+
     return (
 <div className='alert alert-secondary'>
-<span>Budget: {currency}<input type="number" step="10" value={budget} onChange={handleBudgetChange}></input>
-</span>
+<span>Budget: {currency}</span>
+<input type="number" step="10" value={budget} onChange={handleBudgetChange}></input>
 </div>
     );
 };
